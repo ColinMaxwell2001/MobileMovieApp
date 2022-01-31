@@ -54,23 +54,15 @@ Distributor: *Walt Disney*
 ## Kanban 
 ![Kanban Scrum Sprint 1](https://user-images.githubusercontent.com/95194573/151726811-aa13e5e4-cf79-4be3-a37b-155f0b5001f3.png)
 
-Class Diagram 
-
-<img width="766" alt="Screen Shot 2022-01-30 at 8 36 24 PM" src="https://user-images.githubusercontent.com/83935603/151727871-8e870c51-0b53-403e-b9b7-86455f202fc4.png">
-
-MainScreen: The first screen that user is on. This will have the options to type in a movie based on year.
-
-MovieResults: Noun class that lists the movie.
-
 
 
 ## SCRUM Roles
 ### UI Developer - Yifei Yang
-### Frontend Developer - Payton
-### Product Owner/Backend Developer - Anish
-### Integration Specialist - Benjamin
+### Frontend Developer - Payton Turnbow
+### Product Owner/Backend Developer - Anish Selar
+### Integration Specialist - Benjamin Seamon
 ### Dev Ops/ Scrum Master - Colin Maxwell
-### Frontend Developer - Kevin
+### Frontend Developer - Kevin Migadde
 
 ## Weekly Standup
 Monday 2:30 Teams Meeting
