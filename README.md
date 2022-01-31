@@ -54,15 +54,15 @@ Distributor: *Walt Disney*
 ## Kanban 
 ![Kanban Scrum Sprint 1](https://user-images.githubusercontent.com/95194573/151726811-aa13e5e4-cf79-4be3-a37b-155f0b5001f3.png)
 
-##Class Diagram 
+## Class Diagram 
 
 <img width="766" alt="Screen Shot 2022-01-30 at 8 36 24 PM" src="https://user-images.githubusercontent.com/83935603/151727871-8e870c51-0b53-403e-b9b7-86455f202fc4.png">
 
-##Class Diagram Description 
+## Class Diagram Description 
 
-MainScreen: The first screen that user is on. This will have the options to type in a movie based on year.
+**MainScreen**: The first screen that user is on. This will have the options to type in a movie based on year.
 
-MovieResults: Noun class that lists the movie.
+**MovieResults**: Noun class that lists the movie.
 
 
 
