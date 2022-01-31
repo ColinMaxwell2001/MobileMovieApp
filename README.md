@@ -51,6 +51,10 @@ Box Office Gross: *$88.7 (Million)*
 Opening Weekend Gross: *$43.4 (Million)*
 Distributor: *Walt Disney*
 
+## Kanban 
+![Kanban Scrum Sprint 1](https://user-images.githubusercontent.com/95194573/151726811-aa13e5e4-cf79-4be3-a37b-155f0b5001f3.png)
+
+
 
 ## SCRUM Roles
 ### UI Developer - Yifei Yang
