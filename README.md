@@ -68,11 +68,11 @@ Distributor: *Walt Disney*
 
 ## SCRUM Roles
 ### UI Developer - Yifei Yang
-### Frontend Developer - Payton
-### Product Owner/Backend Developer - Anish
-### Integration Specialist - Benjamin
+### Frontend Developer - Payton Turnbow
+### Product Owner/Backend Developer - Anish Selar
+### Integration Specialist - Benjamin Seamon
 ### Dev Ops/ Scrum Master - Colin Maxwell
-### Frontend Developer - Kevin
+### Frontend Developer - Kevin Migadde
 
 ## Weekly Standup
 Monday 2:30 Teams Meeting
