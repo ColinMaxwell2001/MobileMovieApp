@@ -52,6 +52,19 @@ Opening Weekend Gross: *$43.4 (Million)*
 Distributor: *Walt Disney*
 
 
+##SCRUM Roles
+UI Developer - Yifei Yang
+Frontend Developer - Payton
+Product Owner/Backend Developer - Anish
+Integration Specialist - Benjamin
+Dev Ops/ Scrum Master - Colin Maxwell
+Frontend Developer - Kevin
+
+##Weekly Standup
+Monday 2:30 Teams Meeting
+https://teams.microsoft.com/_?lm=deeplink&lmsrc=NeutralHomePageWeb&cmpid=WebSignIn&culture=en-us&country=us#/conversations/19:a2f50954fb994689936231a8f86ea1ce@thread.v2?ctx=chat 
+
+
 
 
 
