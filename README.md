@@ -12,6 +12,9 @@ Have you ever wondered how popular your favorite movie was? Do you know how well
 - Find what movies were released in the user inputted year
 - Compare user inputted movie to other movies released that same year.
 
+-Using this link for JSON data:
+https://api.jsonbin.io/b/6227c3b9a703bb674925773a
+
 
 ## Storyboard
 ![Screen Shot 2022-01-29 at 2 25 06 PM](https://user-images.githubusercontent.com/95194573/151718807-16a5cb4a-8e03-4a84-be1d-02e58011371b.png)
