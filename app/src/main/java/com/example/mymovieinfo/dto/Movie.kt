@@ -7,7 +7,7 @@ data class Movie(@SerializedName("rank")var rank: Int,
                  @SerializedName("country") var country: String,
                  @SerializedName("boxOfficeGross")var boxOfficeGross: Double,
                  @SerializedName("openingWeekendGross")var openingWeekendGross: Double,
-                 @SerializedName("distributor")var distributor: String) {
+                 @SerializedName("distributor")var distributor: String){
 
     override fun toString(): String {
         return title
