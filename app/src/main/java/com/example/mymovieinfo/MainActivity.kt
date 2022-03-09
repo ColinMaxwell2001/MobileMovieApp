@@ -2,6 +2,7 @@ package com.example.mymovieinfo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import java.io.IOException
 import java.io.InputStream
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 fun FindMovie(){
     var movieName by remember { mutableStateOf("")}
     var movieYear by remember { mutableStateOf("")}
+    val context = LocalContext.value
     Column {
         OutlinedTextField(value = movieName,
             onValueChange = { movieName = it },
@@ -28,6 +30,11 @@ fun FindMovie(){
             onValueChange = { movieYear = it },
             label = { Text(context.getString(R.string.movieYear)) }
         )
+        Button(
+            onClick = {
+                Toast.makeText(context, "$movieName $movieYear", Toast.LENGTH_LONG).show()
+            }
+        ){Text(text = "Find Movie")}
     }
 }
 
