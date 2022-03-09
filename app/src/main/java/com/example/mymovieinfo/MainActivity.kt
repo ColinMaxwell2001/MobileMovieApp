@@ -18,16 +18,17 @@ class MainActivity : AppCompatActivity() {
 @Composable
 fun FindMovie(){
     var movieName by remember { mutableStateOf("")}
-    OutlinedTextField(value = movieName,
-    onValueChange = {movieName = it},
-    label = {Text(context.getString(R.string.movieName))}
-    )
     var movieYear by remember { mutableStateOf("")}
-    OutlinedTextField(value = movieYear,
-        onValueChange = {movieYear = it},
-        label = {Text(context.getString(R.string.movieYear))}
-    )
-
+    Column {
+        OutlinedTextField(value = movieName,
+            onValueChange = { movieName = it },
+            label = { Text(context.getString(R.string.movieName)) }
+        )
+        OutlinedTextField(value = movieYear,
+            onValueChange = { movieYear = it },
+            label = { Text(context.getString(R.string.movieYear)) }
+        )
+    }
 }
 
 
