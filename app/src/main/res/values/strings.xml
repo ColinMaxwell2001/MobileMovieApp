@@ -3,5 +3,6 @@
     <string name="movie_year">Movie Year</string>
     <string name="movie_name">Movie Name</string>
     <string name="find_my_movie">Find My Movie</string>
+    <string name="results">Results</string>
 
 </resources>
