@@ -11,6 +11,6 @@ val Typography = Typography(
         fontFamily = FontFamily.SansSerif,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp
-
+//add back up set of typography just in case
     )
 )
