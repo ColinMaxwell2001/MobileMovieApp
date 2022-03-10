@@ -8,7 +8,7 @@
     tools:ignore="ExtraText">
 
     <EditText
-        android:id="@+id/txt_MovieYear"
+        android:id="@+id/txt_Year"
         android:layout_width="243dp"
         android:layout_height="69dp"
         android:layout_marginTop="81dp"
@@ -38,7 +38,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_FindMyMovie"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_MovieYear"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Year"
         tools:ignore="LabelFor"
         tools:visibility="visible" />
 
@@ -72,7 +72,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_MovieYear"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Year"
         android:importantForAutofill="no"
         tools:ignore="LabelFor" />
 
