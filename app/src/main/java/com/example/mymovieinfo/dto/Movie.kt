@@ -2,12 +2,12 @@ package com.example.mymovieinfo.dto
 
 import com.google.gson.annotations.SerializedName
 
-data class Movie(@SerializedName("rank")var rank: Int, @SerializedName("title")var title: String,
-                 @SerializedName("country") var country: String, @SerializedName("boxOfficeGross")var boxOfficeGross: Double,
-                 @SerializedName("openingWeekendGross")var openingWeekendGross: Double, @SerializedName("distributor")var distributor: String){
+data class Movie(@SerializedName("Rank")var rank: Int, @SerializedName("Title")var title: String,
+                 @SerializedName("Country_of_origin") var country: String, @SerializedName("Box_office_gross")var boxOfficeGross: Double,
+                 @SerializedName("Opening_Weekend_Gross")var openingWeekendGross: Double, @SerializedName("Distributor")var distributor: String){
 
     override fun toString(): String {
-        return title
+        return "$title"
     }
 
 } //End DataClass
