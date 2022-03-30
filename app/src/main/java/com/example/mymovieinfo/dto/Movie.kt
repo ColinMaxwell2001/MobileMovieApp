@@ -10,4 +10,7 @@ data class Movie(@SerializedName("rank")var rank: Int, @SerializedName("title")v
         return title
     }
 
+
+
+
 } //End DataClass
