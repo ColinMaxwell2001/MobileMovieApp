@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
             result.text = "the $name was released in $year"
 
+
                 //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
         }
         }
