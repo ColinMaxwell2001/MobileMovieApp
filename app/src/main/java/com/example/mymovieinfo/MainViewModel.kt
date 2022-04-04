@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 class MainViewModel : ViewModel() {
     // Implements the movie service fetch movies list to create a live data list of the movies
     var movies : MutableLiveData<List<Movie>> = MutableLiveData<List<Movie>>()
-    var movieService : MovieService = MovieService()
+   private var movieService : MovieService = MovieService()
     fun fetchCountries() {
         viewModelScope.launch{
             var innerMovies = movieService.fetchMovies()

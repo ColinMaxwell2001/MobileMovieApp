@@ -19,7 +19,7 @@ import androidx.compose.runtime.livedata.observeAsState
 
 class MainActivity : AppCompatActivity() {
 
-    val viewModel: MainViewModel by viewModel<MainViewModel>()
+   private val viewModel: MainViewModel by viewModel<MainViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
