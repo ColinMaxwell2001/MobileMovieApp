@@ -10,9 +10,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView
 import android.widget.Toast;
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.runtime.getValue
 import com.example.mymovieinfo.dto.Movie
+import org.koin.androidx.viewmodel.ext.android.viewModel
+import androidx.compose.runtime.livedata.observeAsState
 
 class MainActivity : AppCompatActivity() {
+
+    val viewModel: MainViewModel by viewModel<MainViewModel>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,12 +32,16 @@ class MainActivity : AppCompatActivity() {
 
         val btn_FindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
         btn_FindMyMovie.setOnClickListener {
-                // your code to perform when the user clicks on the button
+            // your code to perform when the user clicks on the button
 
             result.text = "the $name was released in $year"
 
 
-                //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
         }
+        setContent {
+            viewModel.fetchCountries()
+            val movies by viewModel.movies.observeAsState(initial = emptyList())
         }
+    }
     }
