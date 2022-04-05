@@ -22,12 +22,11 @@ class MainActivity : AppCompatActivity() {
         var result = findViewById(R.id.txt_Results) as TextView
 
 
-        val btn_FindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
-        btn_FindMyMovie.setOnClickListener {
+        val btnFindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
+        btnFindMyMovie.setOnClickListener {
                 // your code to perform when the user clicks on the button
 
             result.text = "the $name was released in $year"
-
 
                 //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
         }
