@@ -1,6 +1,6 @@
 package com.example.mymovieinfo.dto
 
-class Specimen(var movieTitle: String = "",
+data class Specimen(var movieTitle: String = "",
                var movieRank: Int = 0,
                var movieCountry : String = "",
                var movieBoxOfficeGross: String = "",
