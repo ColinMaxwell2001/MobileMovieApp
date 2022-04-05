@@ -17,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var year = findViewById(R.id.txt_Year) as TextView
-        var name = findViewById(R.id.txt_MovieName) as TextView
-        var result = findViewById(R.id.txt_Results) as TextView
+        var year = findViewById<TextView>(R.id.txt_Year)
+        var name = findViewById<TextView>(R.id.txt_MovieName)
+        var result = findViewById<TextView>(R.id.txt_Results)
 
 
-        val btnFindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
+        val btnFindMyMovie = findViewById<Button>(R.id.btn_FindMyMovie)
         btnFindMyMovie.setOnClickListener {
                 // your code to perform when the user clicks on the button
 
