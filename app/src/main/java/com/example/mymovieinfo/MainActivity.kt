@@ -2,24 +2,33 @@ package com.example.mymovieinfo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-<<<<<<< Updated upstream
-=======
+import android.widget.Button
+import android.widget.TextView
+
 import org.w3c.dom.Text
 import java.io.IOException
 import java.io.InputStream
->>>>>>> Stashed changes
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-    //test 2
-    }
-<<<<<<< Updated upstream
-=======
-    fun Greeting(name: String){
-        Text(text = "Welcome $name!")
+
+        var year = findViewById(R.id.txt_Year) as TextView
+        var name = findViewById(R.id.txt_MovieName) as TextView
+        var result = findViewById(R.id.txt_Results) as TextView
+
+
+        val btn_FindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
+        btn_FindMyMovie.setOnClickListener {
+            // your code to perform when the user clicks on the button
+
+            result.text = "the $name was released in $year"
+
+
+            //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+        }
     }
 
->>>>>>> Stashed changes
 }
