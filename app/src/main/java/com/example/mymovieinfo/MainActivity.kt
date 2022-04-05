@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 import org.w3c.dom.Text
 import java.io.IOException
@@ -15,19 +16,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var year = findViewById(R.id.txt_Year) as TextView
-        var name = findViewById(R.id.txt_MovieName) as TextView
-        var result = findViewById(R.id.txt_Results) as TextView
+        var year = findViewById<TextView>(R.id.txt_Year)
+        var name = findViewById<TextView>(R.id.txt_MovieName)
+        var result = findViewById<TextView>(R.id.txt_Results)
 
 
-        val btn_FindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
-        btn_FindMyMovie.setOnClickListener {
+        val btnFindMyMovie = findViewById<Button>(R.id.btn_FindMyMovie)
+        btnFindMyMovie.setOnClickListener {
             // your code to perform when the user clicks on the button
 
             result.text = "the $name was released in $year"
 
 
-            //Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
         }
     }
 
