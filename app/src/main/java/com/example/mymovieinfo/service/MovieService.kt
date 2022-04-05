@@ -1,6 +1,9 @@
 package com.example.mymovieinfo.service
 
+import android.content.ContentValues.TAG
+import android.util.Log
 import com.example.mymovieinfo.RetrofitClientInstance
+import com.example.mymovieinfo.dao.ILocalMovieDAO
 import com.example.mymovieinfo.dao.IMovieDAO
 import com.example.mymovieinfo.dto.Movie
 import kotlinx.coroutines.Dispatchers
@@ -18,4 +21,10 @@ class MovieService {
             return@withContext result
         }
     }
-}
+
+
+
+
+
+
+} //End MovieService
