@@ -7,6 +7,6 @@ class Specimen(var movieTitle: String = "",
                var movieOpeningWeekendGross : String = "",
                var movieDistributor : String = "") {
     override fun toString(): String {
-        return "$movieTitle"
+        return movieTitle
     }
 }
