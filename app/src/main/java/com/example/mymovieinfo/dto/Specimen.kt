@@ -1,7 +1,12 @@
 package com.example.mymovieinfo.dto
 
-class Specimen(var MovieTitle: String = "", var MovieRank: Int = 0, var MovieCountry : String = "", var MovieBoxOfficeGross: String = "", var MovieOpeningWeekendGross : String = "", var MovieDistributor : String = "") {
+class Specimen(var movieTitle: String = "",
+               var movieRank: Int = 0,
+               var movieCountry : String = "",
+               var movieBoxOfficeGross: String = "",
+               var movieOpeningWeekendGross : String = "",
+               var movieDistributor : String = "") {
     override fun toString(): String {
-        return "$MovieTitle"
+        return "$movieTitle"
     }
 }
