@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/G/Android projects/MobileMovieApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/G/Android projects/MobileMovieApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/G/Android projects/MobileMovieApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/Users/dawny/Documents/GitHub/MobileMovieApp/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.32447916666666665" />
       </map>

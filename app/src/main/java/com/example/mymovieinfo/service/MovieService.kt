@@ -1,7 +1,5 @@
 package com.example.mymovieinfo.service
 
-import android.content.ContentValues.TAG
-import android.util.Log
 import com.example.mymovieinfo.RetrofitClientInstance
 import com.example.mymovieinfo.dao.ILocalMovieDAO
 import com.example.mymovieinfo.dao.IMovieDAO
@@ -16,9 +14,8 @@ class MovieService {
     suspend fun fetchMovies() : List<Movie>? {
         return withContext(Dispatchers.IO) {
             val service = RetrofitClientInstance.retrofitInstance?.create(IMovieDAO::class.java)
-            val movies = async {service?.getAllMovies()}
-            var result = movies.await()?.awaitResponse()?.body()
-            return@withContext result
+            val movies = async { service?.getAllMovies() }
+            return@withContext movies.await()?.awaitResponse()?.body()
         }
     }
 
