@@ -44,4 +44,8 @@ class MainActivity : AppCompatActivity() {
             val movies by viewModel.movies.observeAsState(initial = emptyList())
         }
     }
-    }
+
+    @Composable
+    annotation class Composable
+
+}
