@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/background3"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moviehub"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/MovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="35dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/movie_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#607D8B"
+        android:textSize="20dp"
+        android:maxLines="1"
+
+
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_FindMyMovie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Year"
+        tools:ignore="LabelFor"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/MovieCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="115dp"
+        android:minHeight="48dp"
+        android:hint="@string/movie_country"
+        android:visibility="visible"
+        android:maxLines="1"
+
+
+        app:layout_constraintBottom_toTopOf="@+id/txt_Results"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor"
+        tools:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btn_FindMyMovie"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:shadowColor="#AAAAAA"
+        android:text="@string/find_my_movie"
+        android:textColor="#C5CAE9"
+        android:visibility="visible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_MovieName"
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#4E4E4E"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txt_Results"
+        android:layout_width="340dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="3dp"
+        android:maxEms="20"
+        android:maxLines="7"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/results"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_Year"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
+
+</LinearLayout>
