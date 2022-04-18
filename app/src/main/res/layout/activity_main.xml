@@ -5,21 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="@drawable/background"
+    android:padding="30dp"
+    android:background="@drawable/background3"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moviehub"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        />
 
     <EditText
         android:id="@+id/MovieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/movie_name"
-
         android:autofillHints=""
         android:ems="10"
-        android:inputType="text"
 
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:text="@string/movie_name"
+
+        android:textSize="20dp"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/btn_FindMyMovie"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,11 +44,12 @@
         android:id="@+id/MovieCountry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/movie_country"
-
-
         android:autofillHints=""
+
+
         android:ems="10"
+        android:minHeight="48dp"
+        android:text="@string/movie_country"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/txt_Results"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +57,6 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor"
         tools:visibility="visible" />
-
 
 
     <Button
@@ -71,6 +83,9 @@
         android:layout_marginStart="73dp"
         android:layout_marginEnd="73dp"
         android:layout_marginBottom="84dp"
+
+        android:maxEms="20"
+        android:maxLines="7"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/results"
