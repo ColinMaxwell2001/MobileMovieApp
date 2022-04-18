@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">MyMovieInfo</string>
-    <string name="movie_country">Movie Country</string>
-    <string name="movie_name">Movie Name</string>
-    <string name="find_my_movie">Find My Movie</string>
-    <string name="results">Results</string>
-    <string name="moviehub">MovieHub</string>
-
-</resources>
