@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
-    android:background="@drawable/background3"
+    android:background="@drawable/background4"
     tools:context=".MainActivity"
     tools:ignore="ExtraText">
 
@@ -20,12 +20,19 @@
         android:layout_gravity="center"
         />
 
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="350dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginLeft="15dp"
+        />
     <EditText
         android:id="@+id/MovieName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="115dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/movie_name"
@@ -50,7 +57,7 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:ems="10"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="27dp"
         android:layout_marginLeft="115dp"
         android:minHeight="48dp"
         android:hint="@string/movie_country"
@@ -70,9 +77,9 @@
         android:id="@+id/btn_FindMyMovie"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="180dp"
-        android:layout_height="90dp"
+        android:layout_height="65dp"
         android:layout_gravity="center"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:shadowColor="#AAAAAA"
         android:text="@string/find_my_movie"
         android:textColor="#C5CAE9"
@@ -90,7 +97,7 @@
         android:id="@+id/txt_Results"
         android:layout_width="340dp"
         android:layout_height="210dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="30dp"
         android:layout_marginLeft="3dp"
         android:maxEms="20"
         android:maxLines="7"
@@ -105,5 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_Year"
         android:importantForAutofill="no"
         tools:ignore="LabelFor" />
+
+
 
 </LinearLayout>
