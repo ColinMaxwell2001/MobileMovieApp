@@ -33,6 +33,7 @@
         android:minHeight="48dp"
         android:textColorHint="#607D8B"
         android:textSize="20dp"
+        android:maxLines="1"
 
 
         android:visibility="visible"
@@ -54,6 +55,7 @@
         android:minHeight="48dp"
         android:hint="@string/movie_country"
         android:visibility="visible"
+        android:maxLines="1"
 
 
         app:layout_constraintBottom_toTopOf="@+id/txt_Results"
