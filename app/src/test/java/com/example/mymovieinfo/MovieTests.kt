@@ -91,8 +91,8 @@ class MovieTests {
 
         coEvery { mockMovieService.fetchMovies() } returns movies
 
-        mvm = MainViewModel()
-        mvm.movieService = mockMovieService
+        mvm = MainViewModel(movieService = mockMovieService)
+       // mvm.movieService = mockMovieService
 
     }
 

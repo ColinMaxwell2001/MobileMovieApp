@@ -7,10 +7,9 @@ import com.example.mymovieinfo.dto.Movie
 import com.example.mymovieinfo.service.MovieService
 import kotlinx.coroutines.launch
 
-class MainViewModel : ViewModel() {
+class MainViewModel(var movieService : MovieService = MovieService()) : ViewModel() {
 
     var movies : MutableLiveData<List<Movie>> = MutableLiveData<List<Movie>>()
-    var movieService : MovieService = MovieService()
 
     fun fetchMovies() {
         viewModelScope.launch {
