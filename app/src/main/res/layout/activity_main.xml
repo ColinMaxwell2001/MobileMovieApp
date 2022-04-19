@@ -14,7 +14,7 @@
         android:id="@+id/Welcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/moviehub"
+        android:text="@string/my_movie_info"
         android:textColor="#FFFFFF"
         android:textSize="36sp"
         android:layout_gravity="center"
@@ -84,6 +84,7 @@
         android:shadowColor="#AAAAAA"
         android:text="@string/find_my_movie"
         android:textColor="#C5CAE9"
+        android:textSize="25dp"
         android:visibility="visible"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,7 +98,7 @@
     <EditText
         android:id="@+id/txt_Results"
         android:layout_width="340dp"
-        android:layout_height="230dp"
+        android:layout_height="180dp"
         android:layout_marginTop="45dp"
         android:layout_marginLeft="6dp"
         android:maxEms="20"
@@ -105,6 +106,7 @@
         android:ems="10"
         android:inputType="text"
         android:hint="@string/results"
+        android:textSize="20dp"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -113,6 +115,19 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_Year"
         android:importantForAutofill="no"
         tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btn_Remember"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="120dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="220dp"
+        android:shadowColor="#AAAAAA"
+        android:text="@string/remember"
+        android:textColor="#C5CAE9"
+        android:visibility="visible"
+
+        tools:visibility="visible" />
 
 
 

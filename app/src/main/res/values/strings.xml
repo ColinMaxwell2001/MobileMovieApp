@@ -5,5 +5,11 @@
     <string name="find_my_movie">Find My Movie</string>
     <string name="results">Results</string>
     <string name="moviehub">MovieHub</string>
+    <string name="remember">Remember</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="my_movie_info">My Movie Info</string>
+    <string name="log_in">Log In</string>
 
 </resources>

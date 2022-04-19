@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/login"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_movie_info"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:id="@+id/UserName"
+        android:layout_width="245dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="130dp"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#607D8B"
+        android:textSize="30dp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="245dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#607D8B"
+        android:textSize="30dp"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:id="@+id/LogIn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:shadowColor="#AAAAAA"
+        android:text="@string/log_in"
+        android:textColor="#C5CAE9"
+        android:textSize="25dp"
+        android:visibility="visible"
+
+        app:rippleColor="#FFFFFF"
+        app:strokeColor="#4E4E4E"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#607D8B"
+        android:textSize="20dp"
+        android:maxLines="1"
+        />
+
+
+</LinearLayout>

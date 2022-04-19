@@ -9,13 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43e9eeb3-a755-4f2b-b1e4-541c9ab4896e" name="Default Changelist" comment="4.18.4">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/LocationLiveData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/dto/LocationDetails.kt" afterDir="false" />
+    <list default="true" id="43e9eeb3-a755-4f2b-b1e4-541c9ab4896e" name="Default Changelist" comment="4.19.1">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/LogInActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/dto/Event.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_log_in.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MainViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MainViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +57,15 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/courses/mobil/profess example/MyPlantDiaryQ-GPS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dawny\Documents\GitHub\MobileMovieApp\app\src\main\res\drawable-xhdpi" />
       <recent name="C:\Users\dawny\AndroidStudioProjects\MyMovieInfo\app\src\main\res\drawable-xhdpi" />
+    </key>
+    <key name="android.template.1536891129">
+      <recent name="com.example.mymovieinfo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dawny\Documents\GitHub\MobileMovieApp\app" />
@@ -167,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650335985629</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4.19.1">
+      <created>1650391343697</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650391343697</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +204,7 @@
     <MESSAGE value="4.18.2" />
     <MESSAGE value="4.18.3" />
     <MESSAGE value="4.18.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.18.4" />
+    <MESSAGE value="4.19.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.19.1" />
   </component>
 </project>

@@ -24,7 +24,7 @@ import com.example.mymovieinfo.dto.Movie
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
-class MainActivity : AppCompatActivity() {
+public class MainActivity : AppCompatActivity() {
 
     private var selectedMovie : Movie? = null
     private var inMovieName: String = ""
@@ -32,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         .text.toString()
     var MovieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
         .text.toString()
+
+
+
 
     private val viewModel: MainViewModel by viewModel<MainViewModel>()
 
@@ -50,6 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //auto complete function
     @Composable
     fun TextFieldWithDropdownUsage(dataIn: List<Movie>, label: String = "", take: Int = 3) {
         val dropDownOptions = remember { mutableStateOf(listOf<Movie>()) }
