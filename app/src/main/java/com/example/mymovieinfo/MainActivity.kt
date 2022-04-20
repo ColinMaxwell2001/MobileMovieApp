@@ -36,8 +36,9 @@ public class MainActivity : AppCompatActivity() {
     private val applicationViewModel : ApplicationViewModel by viewModel<ApplicationViewModel>()
 
 
-
     private val viewModel: MainViewModel by viewModel<MainViewModel>()
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,13 +47,15 @@ public class MainActivity : AppCompatActivity() {
 
         val btn_FindMyMovie = findViewById(R.id.btn_FindMyMovie) as Button
         btn_FindMyMovie.setOnClickListener {
-
         }
+
         setContent {
             viewModel.fetchCountries()
             val movies by viewModel.movies.observeAsState(initial = emptyList())
         }
-//
+
+        //val location by applicationViewModel.getLocationLiveData().observeAsState()
+
     }
 
     //auto complete function

@@ -13,7 +13,7 @@ interface IMovieService {
     suspend fun fetchPlants(): List<Movie>?
 }
 
-class MovieService {
+class MovieService(application: Application) {
     suspend fun fetchMovies(MovieName : String) : List<Movie>? {
         return withContext(Dispatchers.IO) {
             val service = RetrofitClientInstance.retrofitInstance?.create(IMovieDAO::class.java)
