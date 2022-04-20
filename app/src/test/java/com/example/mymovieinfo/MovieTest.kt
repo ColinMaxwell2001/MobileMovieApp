@@ -4,6 +4,7 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
 import com.example.mymovieinfo.dto.Movie
 import com.example.mymovieinfo.service.MovieService
+import com.example.mymovieinfo.ui.main.MainViewModel
 import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.impl.annotations.MockK
