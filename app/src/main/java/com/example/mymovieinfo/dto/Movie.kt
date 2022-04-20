@@ -1,23 +1,13 @@
 package com.example.mymovieinfo.dto
 
-import androidx.lifecycle.Transformations.map
-import com.google.gson.Gson
 import com.google.gson.annotations.SerializedName
-import com.google.gson.reflect.TypeToken
 
-public data class Movie(@SerializedName("rank")var rank: Int,
-                        @SerializedName("title")var title: String,
-                        @SerializedName("country") var country: String,
-                        @SerializedName("boxOfficeGross")var boxOfficeGross: Double,
-                        @SerializedName("openingWeekendGross")var openingWeekendGross: Double,
-                        @SerializedName("distributor")var distributor: String){
+data class Movie(@SerializedName("Rank") var Rank:String, @SerializedName("Title")var Title: String,
+                 @SerializedName("Country_of_origin")var Country_of_origin:String, @SerializedName("Box_office_gross")var Box_office_gross:String,
+                 @SerializedName("Opening_Weekend_Gross")var Opening_Weekend_Gross:String, @SerializedName("Distributor")var Distributor: String){
 
     override fun toString(): String {
-        return title
+        return Title
     }
-    val map: MutableMap<String, String> = HashMap()
-    //for (movie in Movie) {
-    //    map[movie.title] = movie.country
-    //}
 
 } //End DataClass
