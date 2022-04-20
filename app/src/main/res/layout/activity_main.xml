@@ -25,14 +25,14 @@
         android:layout_width="350dp"
         android:layout_height="20dp"
         android:layout_marginTop="43dp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         />
 
     <EditText
         android:id="@+id/MovieName"
         android:layout_width="235dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="115dp"
+        android:layout_marginStart="115dp"
         android:layout_marginTop="30dp"
         android:autofillHints=""
         android:ems="10"
@@ -40,7 +40,7 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:textColorHint="#607D8B"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:maxLines="1"
 
 
@@ -59,12 +59,12 @@
         android:autofillHints=""
         android:ems="10"
         android:layout_marginTop="27dp"
-        android:layout_marginLeft="115dp"
+        android:layout_marginStart="115dp"
         android:minHeight="48dp"
         android:hint="@string/movie_country"
         android:visibility="visible"
         android:maxLines="1"
-
+        android:inputType="text"
 
         app:layout_constraintBottom_toTopOf="@+id/txt_Results"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +84,7 @@
         android:shadowColor="#AAAAAA"
         android:text="@string/find_my_movie"
         android:textColor="#C5CAE9"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:visibility="visible"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -100,13 +100,13 @@
         android:layout_width="340dp"
         android:layout_height="180dp"
         android:layout_marginTop="45dp"
-        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
         android:maxEms="20"
         android:maxLines="7"
         android:ems="10"
         android:inputType="text"
         android:hint="@string/results"
-        android:textSize="20dp"
+        android:textSize="20sp"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -121,7 +121,7 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="120dp"
         android:layout_height="45dp"
-        android:layout_marginLeft="220dp"
+        android:layout_marginStart="220dp"
         android:shadowColor="#AAAAAA"
         android:text="@string/remember"
         android:textColor="#C5CAE9"

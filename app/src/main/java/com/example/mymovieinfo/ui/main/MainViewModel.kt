@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 class MainViewModel : ViewModel() {
     // Implements the movie service fetch movies list to create a live data list of the movies
     var movies : MutableLiveData<List<Movie>> = MutableLiveData<List<Movie>>()
-    private var movieService : MovieService = MovieService(application)
+    private var movieService : MovieService = MovieService()
     private var _specimens: MutableLiveData<ArrayList<Specimen>> = MutableLiveData<ArrayList<Specimen>>()
 
     private lateinit var firestore: FirebaseFirestore
@@ -49,7 +49,7 @@ class MainViewModel : ViewModel() {
 
     fun fetchCountries() {
         viewModelScope.launch{
-            var innerMovies = movieService.fetchMovies()
+            var innerMovies = movieService.fetchMovies("movies")
             movies.postValue(innerMovies!!)
         }
     }
