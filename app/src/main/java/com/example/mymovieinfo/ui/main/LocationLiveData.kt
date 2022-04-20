@@ -1,21 +1,14 @@
-package com.example.mymovieinfo
+package com.example.mymovieinfo.ui.main
 
 import android.Manifest
-import android.app.TaskStackBuilder.create
 import android.content.Context
-import android.content.IntentFilter.create
 import android.content.pm.PackageManager
-import android.database.sqlite.SQLiteDatabase.create
 import android.location.Location
-import android.location.LocationRequest
-import android.media.MediaParser.create
-import android.media.audiofx.AcousticEchoCanceler.create
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.LiveData
 import com.example.mymovieinfo.dto.LocationDetails
 import com.google.android.gms.location.LocationServices
-import java.net.URI.create
-import android.app.Application
+import android.os.Looper
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationResult
 
@@ -51,8 +44,25 @@ class LocationLiveData(var context: Context) : LiveData<LocationDetails>(){
         startLocationUpdates()
     }
 
-    private fun startLocationUpdates() {
-        //fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback)
+    internal fun startLocationUpdates() {
+        if (ActivityCompat.checkSelfPermission(
+                context,
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(
+                context,
+                Manifest.permission.ACCESS_COARSE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return
+        }
+        fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.getMainLooper())
     }
 
 
@@ -64,6 +74,7 @@ class LocationLiveData(var context: Context) : LiveData<LocationDetails>(){
         }
     override fun onInactive() {
         super.onInactive()
+        fusedLocationClient.removeLocationUpdates(locationCallback)
     }
 
     private val locationCallback = object : LocationCallback() {

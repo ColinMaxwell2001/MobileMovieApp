@@ -21,6 +21,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.PopupProperties
 import com.example.mymovieinfo.dto.Movie
+import com.example.mymovieinfo.ui.main.MainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
@@ -32,7 +33,7 @@ public class MainActivity : AppCompatActivity() {
         .text.toString()
     var MovieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
         .text.toString()
-
+    private val applicationViewModel : ApplicationViewModel by viewModel<ApplicationViewModel>()
 
 
 
@@ -51,6 +52,7 @@ public class MainActivity : AppCompatActivity() {
             viewModel.fetchCountries()
             val movies by viewModel.movies.observeAsState(initial = emptyList())
         }
+//
     }
 
     //auto complete function

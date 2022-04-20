@@ -1,5 +1,6 @@
 package com.example.mymovieinfo.service
 
+import android.app.Application
 import com.example.mymovieinfo.RetrofitClientInstance
 import com.example.mymovieinfo.dao.IMovieDAO
 import com.example.mymovieinfo.dto.Movie
@@ -8,9 +9,12 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.withContext
 import retrofit2.awaitResponse
 
-class MovieService {
+interface IMovieService {
+    suspend fun fetchPlants(): List<Movie>?
+}
 
-    suspend fun fetchMovies() : List<Movie>? {
+class MovieService {
+    suspend fun fetchMovies(MovieName : String) : List<Movie>? {
         return withContext(Dispatchers.IO) {
             val service = RetrofitClientInstance.retrofitInstance?.create(IMovieDAO::class.java)
             val movies = async {service?.getAllMovies()}
@@ -18,4 +22,5 @@ class MovieService {
             return@withContext result
         }
     }
+
 }

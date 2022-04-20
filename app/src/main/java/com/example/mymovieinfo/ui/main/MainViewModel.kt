@@ -1,8 +1,7 @@
-package com.example.mymovieinfo
+package com.example.mymovieinfo.ui.main
 
 import android.content.ContentValues.TAG
 import android.util.Log
-import androidx.compose.runtime.snapshotFlow
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -51,11 +50,12 @@ class MainViewModel : ViewModel() {
     fun fetchCountries() {
         viewModelScope.launch{
             var innerMovies = movieService.fetchMovies()
-            movies.postValue(innerMovies)
+            movies.postValue(innerMovies!!)
         }
     }
 
     internal var specimens: MutableLiveData<ArrayList<Specimen>>
     get(){return _specimens}
     set(value) {_specimens = value}
+
 }
