@@ -29,10 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private var selectedMovie : Movie? = null
     private var inMovieName: String = ""
-    var MovieName = (findViewById<View>(R.id.MovieName) as EditText)
-        .text.toString()
-    var MovieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
-        .text.toString()
+
     private val applicationViewModel : ApplicationViewModel by viewModel<ApplicationViewModel>()
 
 
@@ -48,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         val btn_FindMyMovie = findViewById<Button>(R.id.btn_FindMyMovie)
         btn_FindMyMovie.setOnClickListener {
         }
+
+        var MovieName = (findViewById<View>(R.id.MovieName) as EditText)
+            .text.toString()
+        var MovieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
+            .text.toString()
 
         setContent {
             viewModel.fetchCountries()
