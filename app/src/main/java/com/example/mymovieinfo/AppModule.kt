@@ -12,5 +12,5 @@ import org.koin.dsl.module
 val appModule = module {
     //viewModel { MainViewModel(get()) }
     viewModel { ApplicationViewModel(androidApplication())}
-    //single<IMovieService> { MovieService() }
+    single<MovieService> { MovieService() }
 }

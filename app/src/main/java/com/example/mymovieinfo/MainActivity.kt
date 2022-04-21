@@ -20,6 +20,8 @@ import androidx.compose.ui.text.TextRange
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.PopupProperties
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import com.example.mymovieinfo.dto.Movie
 import com.example.mymovieinfo.ui.main.MainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -29,10 +31,10 @@ class MainActivity : AppCompatActivity() {
 
     private var selectedMovie : Movie? = null
     private var inMovieName: String = ""
-    var MovieName = (findViewById<View>(R.id.MovieName) as EditText)
-        .text.toString()
-    var MovieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
-        .text.toString()
+    var movieName = (findViewById<View>(R.id.MovieName) as EditText)
+
+    var movieCountry = (findViewById<View>(R.id.MovieCountry) as EditText)
+
     private val applicationViewModel : ApplicationViewModel by viewModel<ApplicationViewModel>()
 
 
@@ -47,17 +49,39 @@ class MainActivity : AppCompatActivity() {
 
         val btn_FindMyMovie = findViewById<Button>(R.id.btn_FindMyMovie)
         btn_FindMyMovie.setOnClickListener {
+            val movieString = movieName.text.toString()
+        //viewModel.getMovie("")
+            val movieCountryString=movieCountry.text.toString()
+            viewModel.findMyMovie(movieString,movieCountryString)
+
         }
 
         setContent {
             viewModel.fetchCountries()
             val movies by viewModel.movies.observeAsState(initial = emptyList())
         }
-
+        val textView = findViewById<EditText>(R.id.txt_Results)
+        val movieFoundObserver = Observer<List <Movie>> {
+            movies -> textView.setText(getMovieString(movies))
+        }
+        viewModel.movieFound.observe(this, movieFoundObserver)
         //val location by applicationViewModel.getLocationLiveData().observeAsState()
 
     }
+    fun getMovieString (movie: List<Movie> ) :String {
+        val builder = StringBuilder ()
+        for(m in movie ) {
+            builder.apply{
 
+                append ("Title "+m.title+"\n")
+                append ("Country of Origin "+m.country+"\n")
+                append ("Box Office Gross "+m.boxOfficeGross+"\n")
+                append ("Opening Weekend Gross "+m.openingWeekendGross+"\n")
+                append ("Distributor "+m.distributor+"\n")
+            }
+        }
+        return builder.toString()
+    }
     //auto complete function
     @Composable
     fun TextFieldWithDropdownUsage(dataIn: List<Movie>, label: String = "", take: Int = 3) {
