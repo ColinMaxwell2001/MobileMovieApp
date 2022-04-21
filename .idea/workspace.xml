@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43e9eeb3-a755-4f2b-b1e4-541c9ab4896e" name="Default Changelist" comment="4.20.1">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MainViewModel.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mymovieinfo/MovieReprisotory.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
